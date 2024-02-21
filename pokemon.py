@@ -926,7 +926,6 @@ class Dratini(Pokemon):
 
 def get_all_pokemon_types():
     all_pokemon = ArrayR(77)
-    classes = []
     i = 0
     for name, obj in inspect.getmembers(inspect.getmodule(inspect.currentframe()), inspect.isclass):
         if name not in ['ABC', 'PokeType', 'Pokemon', 'TypeEffectiveness', 'Enum', 'ArrayR']:
