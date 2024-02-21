@@ -11,6 +11,7 @@ class Bulbasaur(Pokemon):
         self.name = "Bulbasaur"
         self.experience = 0
         self.defence = 20
+        self.speed = 4.5
 
 class Charmander(Pokemon):
     def __init__(self):
@@ -23,6 +24,7 @@ class Charmander(Pokemon):
         self.name = "Charmander"
         self.experience = 0
         self.defence = 10
+        self.speed = 65
 
 class Squirtle(Pokemon):
     def __init__(self):
@@ -35,6 +37,7 @@ class Squirtle(Pokemon):
         self.name = "Squirtle"
         self.experience = 0
         self.defence = 12
+        self.speed = 43
 
 class Caterpie(Pokemon):
     def __init__(self):
@@ -47,6 +50,7 @@ class Caterpie(Pokemon):
         self.name = "Caterpie"
         self.experience = 0
         self.defence = 8
+        self.speed = 30
 
 class Weedle(Pokemon):
     def __init__(self):
@@ -59,6 +63,7 @@ class Weedle(Pokemon):
         self.name = "Weedle"
         self.experience = 0
         self.defence = 10
+        self.speed = 50
 
 class Pidgey(Pokemon):
     def __init__(self):
@@ -71,6 +76,7 @@ class Pidgey(Pokemon):
         self.name = "Pidgey"
         self.experience = 0
         self.defence = 8
+        self.speed = 56
 
 class Rattata(Pokemon):
     def __init__(self):
@@ -83,6 +89,7 @@ class Rattata(Pokemon):
         self.name = "Rattata"
         self.experience = 0
         self.defence = 5
+        self.speed = 72
 
 class Spearow(Pokemon):
     def __init__(self):
@@ -95,6 +102,7 @@ class Spearow(Pokemon):
         self.name = "Spearow"
         self.experience = 0
         self.defence = 9
+        self.speed = 70
 
 class Ekans(Pokemon):
     def __init__(self):
@@ -107,6 +115,7 @@ class Ekans(Pokemon):
         self.name = "Ekans"
         self.experience = 0
         self.defence = 8
+        self.speed = 55
 
 class Pikachu(Pokemon):
     def __init__(self):
@@ -119,6 +128,7 @@ class Pikachu(Pokemon):
         self.name = "Pikachu"
         self.experience = 0
         self.defence = 15
+        self.speed = 90
 
 class Sandshrew(Pokemon):
     def __init__(self):
@@ -131,6 +141,7 @@ class Sandshrew(Pokemon):
         self.name = "Sandshrew"
         self.experience = 0
         self.defence = 20
+        self.speed = 40
 
 class NidoranM(Pokemon):
     def __init__(self):
@@ -143,6 +154,7 @@ class NidoranM(Pokemon):
         self.name = "Nidoran(M)"
         self.experience = 0
         self.defence = 7
+        self.speed = 41
 
 class NidoranF(Pokemon):
     def __init__(self):
@@ -155,6 +167,7 @@ class NidoranF(Pokemon):
         self.name = "Nidoran(F)"
         self.experience = 0
         self.defence = 12
+        self.speed = 56
 
 class Clefairy(Pokemon):
     def __init__(self):
@@ -167,6 +180,7 @@ class Clefairy(Pokemon):
         self.name = "Clefairy"
         self.experience = 0
         self.defence = 15
+        self.speed = 35
 
 class Vulpix(Pokemon):
     def __init__(self):
@@ -179,6 +193,7 @@ class Vulpix(Pokemon):
         self.name = "Vulpix"
         self.experience = 0
         self.defence = 8
+        self.speed = 65
 
 class Jigglypuff(Pokemon):
     def __init__(self):
@@ -191,6 +206,7 @@ class Jigglypuff(Pokemon):
         self.name = "Jigglypuff"
         self.experience = 0
         self.defence = 8
+        self.speed = 20
 
 class Zubat(Pokemon):
     def __init__(self):
@@ -203,6 +219,7 @@ class Zubat(Pokemon):
         self.name = "Zubat"
         self.experience = 0
         self.defence = 7
+        self.speed = 80
 
 class Oddish(Pokemon):
     def __init__(self):
@@ -215,6 +232,7 @@ class Oddish(Pokemon):
         self.name = "Oddish"
         self.experience = 0
         self.defence = 7
+        self.speed = 30
 
 class Paras(Pokemon):
     def __init__(self):
@@ -227,6 +245,7 @@ class Paras(Pokemon):
         self.name = "Paras"
         self.experience = 0
         self.defence = 10
+        self.speed = 25
 
 class Venonat(Pokemon):
     def __init__(self):
@@ -239,6 +258,7 @@ class Venonat(Pokemon):
         self.name = "Venonat"
         self.experience = 0
         self.defence = 15
+        self.speed = 45
 
 class Diglett(Pokemon):
     def __init__(self):
@@ -251,6 +271,7 @@ class Diglett(Pokemon):
         self.name = "Diglett"
         self.experience = 0
         self.defence = 15
+        self.speed = 95
 
 class Meowth(Pokemon):
     def __init__(self):
@@ -263,6 +284,7 @@ class Meowth(Pokemon):
         self.name = "Meowth"
         self.experience = 0
         self.defence = 8
+        self.speed = 90
 
 class Psyduck(Pokemon):
     def __init__(self):
@@ -275,6 +297,7 @@ class Psyduck(Pokemon):
         self.name = "Psyduck"
         self.experience = 0
         self.defence = 15
+        self.speed = 55
 
 class Mankey(Pokemon):
     def __init__(self):
@@ -287,6 +310,7 @@ class Mankey(Pokemon):
         self.name = "Mankey"
         self.experience = 0
         self.defence = 20
+        self.speed = 70
 
 class Growlithe(Pokemon):
     def __init__(self):
@@ -299,6 +323,7 @@ class Growlithe(Pokemon):
         self.name = "Growlithe"
         self.experience = 0
         self.defence = 12
+        self.speed = 60
 
 class Poliwag(Pokemon):
     def __init__(self):
@@ -311,6 +336,7 @@ class Poliwag(Pokemon):
         self.name = "Poliwag"
         self.experience = 0
         self.defence = 8
+        self.speed = 90
 
 class Abra(Pokemon):
     def __init__(self):
@@ -323,6 +349,7 @@ class Abra(Pokemon):
         self.name = "Abra"
         self.experience = 0
         self.defence = 5
+        self.speed = 90
 
 class Machop(Pokemon):
     def __init__(self):
@@ -335,6 +362,7 @@ class Machop(Pokemon):
         self.name = "Machop"
         self.experience = 0
         self.defence = 26
+        self.speed = 35
 
 class Bellsprout(Pokemon):
     def __init__(self):
@@ -347,6 +375,7 @@ class Bellsprout(Pokemon):
         self.name = "Bellsprout"
         self.experience = 0
         self.defence = 13
+        self.speed = 40
 
 class Tentacool(Pokemon):
     def __init__(self):
@@ -359,6 +388,7 @@ class Tentacool(Pokemon):
         self.name = "Tentacool"
         self.experience = 0
         self.defence = 15
+        self.speed = 70
 
 class Geodude(Pokemon):
     def __init__(self):
@@ -371,6 +401,7 @@ class Geodude(Pokemon):
         self.name = "Geodude"
         self.experience = 0
         self.defence = 35
+        self.speed = 20
 
 class Ponyta(Pokemon):
     def __init__(self):
@@ -383,6 +414,7 @@ class Ponyta(Pokemon):
         self.name = "Ponyta"
         self.experience = 0
         self.defence = 12
+        self.speed = 90
 
 class Slowpoke(Pokemon):
     def __init__(self):
@@ -395,6 +427,7 @@ class Slowpoke(Pokemon):
         self.name = "Slowpoke"
         self.experience = 0
         self.defence = 20
+        self.speed = 15
 
 class Magnemite(Pokemon):
     def __init__(self):
@@ -407,6 +440,7 @@ class Magnemite(Pokemon):
         self.name = "Magnemite"
         self.experience = 0
         self.defence = 8
+        self.speed = 45
 
 class Farfetchd(Pokemon):
     def __init__(self):
@@ -419,6 +453,7 @@ class Farfetchd(Pokemon):
         self.name = "Farfetchd"
         self.experience = 0
         self.defence = 12
+        self.speed = 60
 
 class Doduo(Pokemon):
     def __init__(self):
@@ -431,6 +466,7 @@ class Doduo(Pokemon):
         self.name = "Doduo"
         self.experience = 0
         self.defence = 15
+        self.speed = 75
 
 class Seel(Pokemon):
     def __init__(self):
@@ -443,6 +479,7 @@ class Seel(Pokemon):
         self.name = "Seel"
         self.experience = 0
         self.defence = 25
+        self.speed = 65
 
 class Grimer(Pokemon):
     def __init__(self):
@@ -455,6 +492,7 @@ class Grimer(Pokemon):
         self.name = "Grimer"
         self.experience = 0
         self.defence = 25
+        self.speed = 25
 
 class Shellder(Pokemon):
     def __init__(self):
@@ -467,6 +505,7 @@ class Shellder(Pokemon):
         self.name = "Shellder"
         self.experience = 0
         self.defence = 12
+        self.speed = 40
 
 class Gastly(Pokemon):
     def __init__(self):
@@ -479,6 +518,7 @@ class Gastly(Pokemon):
         self.name = "Gastly"
         self.experience = 0
         self.defence = 10
+        self.speed = 80
 
 class Onix(Pokemon):
     def __init__(self):
@@ -491,6 +531,7 @@ class Onix(Pokemon):
         self.name = "Onix"
         self.experience = 0
         self.defence = 20
+        self.speed = 30
 
 class Drowzee(Pokemon):
     def __init__(self):
@@ -503,6 +544,7 @@ class Drowzee(Pokemon):
         self.name = "Drowzee"
         self.experience = 0
         self.defence = 12
+        self.speed = 42
 
 class Krabby(Pokemon):
     def __init__(self):
@@ -515,6 +557,7 @@ class Krabby(Pokemon):
         self.name = "Krabby"
         self.experience = 0
         self.defence = 8
+        self.speed = 50
 
 class Voltorb(Pokemon):
     def __init__(self):
@@ -527,6 +570,7 @@ class Voltorb(Pokemon):
         self.name = "Voltorb"
         self.experience = 0
         self.defence = 15
+        self.speed = 100
 
 class Exeggcute(Pokemon):
     def __init__(self):
@@ -539,6 +583,7 @@ class Exeggcute(Pokemon):
         self.name = "Exeggcute"
         self.experience = 0
         self.defence = 7
+        self.speed = 20
 
 class Cubone(Pokemon):
     def __init__(self):
@@ -551,6 +596,7 @@ class Cubone(Pokemon):
         self.name = "Cubone"
         self.experience = 0
         self.defence = 8
+        self.speed = 35
 
 class Hitmonlee(Pokemon):
     def __init__(self):
@@ -563,6 +609,7 @@ class Hitmonlee(Pokemon):
         self.name = "Hitmonlee"
         self.experience = 0
         self.defence = 15
+        self.speed = 87
 
 class Hitmonchan(Pokemon):
     def __init__(self):
@@ -575,6 +622,7 @@ class Hitmonchan(Pokemon):
         self.name = "Hitmonchan"
         self.experience = 0
         self.defence = 20
+        self.speed = 76
 
 class Lickitung(Pokemon):
     def __init__(self):
@@ -587,6 +635,7 @@ class Lickitung(Pokemon):
         self.name = "Lickitung"
         self.experience = 0
         self.defence = 35
+        self.speed = 30
 
 class Koffing(Pokemon):
     def __init__(self):
@@ -599,6 +648,7 @@ class Koffing(Pokemon):
         self.name = "Koffing"
         self.experience = 0
         self.defence = 25
+        self.speed = 35
 
 class Rhyhorn(Pokemon):
     def __init__(self):
@@ -611,6 +661,7 @@ class Rhyhorn(Pokemon):
         self.name = "Rhyhorn"
         self.experience = 0
         self.defence = 50
+        self.speed = 25
 
 class Chansey(Pokemon):
     def __init__(self):
@@ -623,6 +674,7 @@ class Chansey(Pokemon):
         self.name = "Chansey"
         self.experience = 0
         self.defence = 5
+        self.speed = 50
 
 class Tangela(Pokemon):
     def __init__(self):
@@ -635,6 +687,7 @@ class Tangela(Pokemon):
         self.name = "Tangela"
         self.experience = 0
         self.defence = 24
+        self.speed = 30
 
 class Kangaskhan(Pokemon):
     def __init__(self):
@@ -647,6 +700,7 @@ class Kangaskhan(Pokemon):
         self.name = "Kangaskhan"
         self.experience = 0
         self.defence = 60
+        self.speed = 70
 
 class Horsea(Pokemon):
     def __init__(self):
@@ -659,6 +713,7 @@ class Horsea(Pokemon):
         self.name = "Horsea"
         self.experience = 0
         self.defence = 10
+        self.speed = 60
 
 class Goldeen(Pokemon):
     def __init__(self):
@@ -671,6 +726,7 @@ class Goldeen(Pokemon):
         self.name = "Goldeen"
         self.experience = 0
         self.defence = 15
+        self.speed = 65
 
 class Staryu(Pokemon):
     def __init__(self):
@@ -683,6 +739,7 @@ class Staryu(Pokemon):
         self.name = "Staryu"
         self.experience = 0
         self.defence = 10
+        self.speed = 85
 
 class MrMime(Pokemon):
     def __init__(self):
@@ -695,6 +752,7 @@ class MrMime(Pokemon):
         self.name = "Mr. Mime"
         self.experience = 0
         self.defence = 10
+        self.speed = 30
 
 class Scyther(Pokemon):
     def __init__(self):
@@ -707,6 +765,7 @@ class Scyther(Pokemon):
         self.name = "Scyther"
         self.experience = 0
         self.defence = 15
+        self.speed = 105
 
 class Jynx(Pokemon):
     def __init__(self):
@@ -719,6 +778,7 @@ class Jynx(Pokemon):
         self.name = "Jynx"
         self.experience = 0
         self.defence = 35
+        self.speed = 95
 
 class Electabuzz(Pokemon):
     def init(self):
@@ -731,6 +791,7 @@ class Electabuzz(Pokemon):
         self.name = "Electabuzz"
         self.experience = 0
         self.defence = 12
+        self.speed = 100
 
 class Magmar(Pokemon):
     def __init__(self):
@@ -743,6 +804,7 @@ class Magmar(Pokemon):
         self.name = "Magmar"
         self.experience = 0
         self.defence = 10
+        self.speed = 80
 
 class Pinsir(Pokemon):
     def __init__(self):
@@ -755,6 +817,7 @@ class Pinsir(Pokemon):
         self.name = "Pinsir"
         self.experience = 0
         self.defence = 35
+        self.speed = 85
 
 class Tauros(Pokemon):
     def __init__(self):
@@ -767,6 +830,7 @@ class Tauros(Pokemon):
         self.name = "Tauros"
         self.experience = 0
         self.defence = 10
+        self.speed = 110
 
 class Magikarp(Pokemon):
     def __init__(self):
@@ -779,6 +843,7 @@ class Magikarp(Pokemon):
         self.name = "Magikarp"
         self.experience = 0
         self.defence = 10
+        self.speed = 80
 
 class Lapras(Pokemon):
     def __init__(self):
@@ -791,6 +856,7 @@ class Lapras(Pokemon):
         self.name = "Lapras"
         self.experience = 0
         self.defence = 10
+        self.speed = 60
 
 class Ditto(Pokemon):
     def __init__(self):
@@ -803,6 +869,7 @@ class Ditto(Pokemon):
         self.name = "Ditto"
         self.experience = 0
         self.defence = 48
+        self.speed = 50
 
 class Eevee(Pokemon):
     def __init__(self):
@@ -815,6 +882,7 @@ class Eevee(Pokemon):
         self.name = "Eevee"
         self.experience = 0
         self.defence = 35
+        self.speed = 55
 
 class Porygon(Pokemon):
     def __init__(self):
@@ -827,6 +895,7 @@ class Porygon(Pokemon):
         self.name = "Porygon"
         self.experience = 0
         self.defence = 7
+        self.speed = 60
 
 class Omanyte(Pokemon):
     def __init__(self):
@@ -839,6 +908,7 @@ class Omanyte(Pokemon):
         self.name = "Omanyte"
         self.experience = 0
         self.defence = 20
+        self.speed = 40
 
 class Kabuto(Pokemon):
     def __init__(self):
@@ -851,6 +921,7 @@ class Kabuto(Pokemon):
         self.name = "Kabuto"
         self.experience = 0
         self.defence = 10
+        self.speed = 55
 
 class Aerodactyl(Pokemon):
     def __init__(self):
@@ -863,6 +934,7 @@ class Aerodactyl(Pokemon):
         self.name = "Aerodactyl"
         self.experience = 0
         self.defence = 5
+        self.speed = 130
 
 class Snorlax(Pokemon):
     def __init__(self):
@@ -875,6 +947,7 @@ class Snorlax(Pokemon):
         self.name = "Snorlax"
         self.experience = 0
         self.defence = 10
+        self.speed = 30
 
 class Articuno(Pokemon):
     def __init__(self):
@@ -887,6 +960,7 @@ class Articuno(Pokemon):
         self.name = "Articuno"
         self.experience = 0
         self.defence = 20
+        self.speed = 85
 
 class Zapdos(Pokemon):
     def __init__(self):
@@ -899,6 +973,7 @@ class Zapdos(Pokemon):
         self.name = "Zapdos"
         self.experience = 0
         self.defence = 20
+        self.speed = 100
 
 class Moltres(Pokemon):
     def __init__(self):
@@ -911,6 +986,7 @@ class Moltres(Pokemon):
         self.name = "Moltres"
         self.experience = 0
         self.defence = 10
+        self.speed = 90
 
 class Dratini(Pokemon):
     def __init__(self):
@@ -923,6 +999,7 @@ class Dratini(Pokemon):
         self.name = "Dratini"
         self.experience = 0
         self.defence = 10
+        self.speed = 86
 
 def get_all_pokemon_types():
     all_pokemon = ArrayR(77)

@@ -67,6 +67,7 @@ class Pokemon(ABC): # pylint: disable=too-few-public-methods, too-many-instance-
         self.name = None
         self.experience = None
         self.defence = None
+        self.speed = None
 
     def get_name(self) -> str:
         """
@@ -85,6 +86,24 @@ class Pokemon(ABC): # pylint: disable=too-few-public-methods, too-many-instance-
             int: The current health of the Pokemon.
         """
         return self.health
+
+    def get_level(self) -> int:
+        """
+        Returns the current level of the Pokemon.
+
+        Returns:
+            int: The current level of the Pokemon.
+        """
+        return self.level
+
+    def get_speed(self) -> int:
+        """
+        Returns the current speed of the Pokemon.
+
+        Returns:
+            int: The current speed of the Pokemon.
+        """
+        return self.speed
 
     def get_experience(self) -> int:
         """
