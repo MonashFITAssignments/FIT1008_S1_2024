@@ -52,7 +52,7 @@ class ArrayR(Generic[T]):
         """
         self.array[index] = value
     
-    def index(self, item: T) -> T:
+    def index(self, item: T) -> int:
         for index, arr_item in enumerate(self.array):
             if arr_item == item:
                 return index
