@@ -34,7 +34,7 @@ class Battle:
     def optimise_battle(self) -> PokeTeam | None:
         raise NotImplementedError
 
-    def special(self) -> None:
+    def special(self, team: PokeTeam) -> None:
         raise NotImplementedError
 
 if __name__ == '__main__':

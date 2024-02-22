@@ -9,6 +9,7 @@ class PokeTeam:
     POKE_LIST = get_all_pokemon_types()
 
     def __init__(self):
+        self.team = None
         raise NotImplementedError
 
     def choose_manually(self):
@@ -18,6 +19,9 @@ class PokeTeam:
         raise NotImplementedError
 
     def regenerate_team(self) -> None:
+        raise NotImplementedError
+
+    def assemble_team(self) -> None:
         raise NotImplementedError
 
     def __getitem__(self, index: int):

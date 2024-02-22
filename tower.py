@@ -7,13 +7,15 @@ from data_structures.sorted_list_adt import ListItem
 from typing import Tuple
 
 class BattleTower:
+    MIN_LIVES = 1
+    MAX_LIVES = 3
     def __init__(self) -> None:
         raise NotImplementedError
 
-    def set_my_team(self) -> None:
+    def set_my_trainer(self) -> None:
         raise NotImplementedError
 
-    def generate_teams(self) -> None:
+    def generate_enemy_trainers(self) -> None:
         raise NotImplementedError
 
     def battles_remaining(self) -> bool:
