@@ -1,8 +1,4 @@
 from poke_team import Trainer, PokeTeam
-from data_structures.stack_adt import ArrayStack
-from data_structures.queue_adt import CircularQueue
-from data_structures.array_sorted_list import ArraySortedList
-from data_structures.sorted_list_adt import ListItem
 from typing import Tuple
 from battle_mode import BattleMode
 

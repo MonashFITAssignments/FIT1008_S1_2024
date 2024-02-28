@@ -1,5 +1,4 @@
 from pokemon import *
-from data_structures.bset import BSet
 import random
 from typing import List
 
