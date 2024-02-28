@@ -5,6 +5,11 @@ from abc import ABC
 from enum import Enum
 from data_structures.referential_array import ArrayR
 
+class BattleMode(Enum):
+    SET = 0
+    ROTATE = 1
+    OPTIMISE = 2
+
 class PokeType(Enum):
     """
     This class contains all the different types that a Pokemon could belong to
