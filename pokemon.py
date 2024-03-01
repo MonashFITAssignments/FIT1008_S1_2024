@@ -783,7 +783,7 @@ class Jynx(Pokemon):
 
 class Electabuzz(Pokemon):
     def __init__(self):
-        super().init()
+        super().__init__()
         self.health = 65
         self.level = 1
         self.poketype = PokeType.ELECTRIC
