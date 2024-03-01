@@ -3,6 +3,7 @@ import inspect
 
 class Bulbasaur(Pokemon):
     def __init__(self):
+        super().__init__()
         self.health = 45
         self.level = 1
         self.poketype = PokeType.GRASS
@@ -781,7 +782,7 @@ class Jynx(Pokemon):
         self.speed = 95
 
 class Electabuzz(Pokemon):
-    def init(self):
+    def __init__(self):
         super().init()
         self.health = 65
         self.level = 1
