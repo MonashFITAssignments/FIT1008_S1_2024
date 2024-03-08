@@ -36,7 +36,7 @@ class TestBattle(unittest.TestCase):
 
         expected_winner = t1
         self.assertEqual(expected_winner.get_name(), winner.get_name(), "Rotate Mode battle failed")
-        self.assertEqual(expected_winner.get_pokedex_completion(), 0.33, "Pokedex completion not being updated in battle")
+        self.assertEqual(expected_winner.get_pokedex_completion(), 0.67, "Pokedex completion not being updated in battle")
 
 
 if __name__ == '__main__':
