@@ -1,4 +1,5 @@
 import unittest
+from ed_utils.decorators import number, visibility
 from unittest.mock import patch
 import random
 from poke_team import *
@@ -8,6 +9,8 @@ from tower import *
 random.seed(5)
 
 class TestTower(unittest.TestCase):
+    @number("4.1")
+    @visibility(visibility.VISIBILITY_SHOW)
     def test_tower(self):
         player_trainer = Trainer('Ash')
         player_trainer.pick_team("Random")
