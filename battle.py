@@ -1,7 +1,7 @@
+from __future__ import annotations
 from poke_team import Trainer, PokeTeam
 from typing import Tuple
 from battle_mode import BattleMode
-
 
 class Battle:
 

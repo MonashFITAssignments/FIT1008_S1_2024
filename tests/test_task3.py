@@ -16,7 +16,7 @@ class TestBattle(unittest.TestCase):
         t2 = Trainer('Ash')
 
         b = Battle(t1, t2, BattleMode.SET)
-        b.create_teams()
+        b._create_teams()
         t1.get_team().special(BattleMode.SET)
         winner = b.commence_battle()
 
@@ -31,7 +31,7 @@ class TestBattle(unittest.TestCase):
         t2 = Trainer('Ash')
 
         b = Battle(t1, t2, BattleMode.ROTATE)
-        b.create_teams()
+        b._create_teams()
         winner = b.commence_battle()
 
         expected_winner = t1
