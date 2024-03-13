@@ -11,9 +11,10 @@ class TestPokeTeam(unittest.TestCase):
     @visibility(visibility.VISIBILITY_SHOW)
     def test_selected_pokemon(self):
         poketeam = PokeTeam()
-        poketeam.TEAM_LIMIT = 2
+        PokeTeam.TEAM_LIMIT = 2
         poketeam.choose_randomly()
         self.assertEqual(len(poketeam), 2, "Team not being selected properly")
+        PokeTeam.TEAM_LIMIT = 6
 
     @number("2.2")
     @visibility(visibility.VISIBILITY_SHOW)

@@ -21,7 +21,7 @@ class BattleTower:
     def battles_remaining(self) -> bool:
         raise NotImplementedError
 
-    def next_battle(self) -> Tuple[Trainer, PokeTeam, int, int]:
+    def next_battle(self) -> Tuple[Trainer, Trainer, Trainer, int, int]:
         raise NotImplementedError
 
     def enemies_defeated(self) -> int:
