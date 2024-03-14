@@ -4,6 +4,18 @@ This module contains PokeType, TypeEffectiveness and an abstract version of the 
 from abc import ABC
 from enum import Enum
 from data_structures.referential_array import ArrayR
+from data_structures.abstract_list import TypeVar,List
+
+"""
+create an effect table array with a fixed size
+"""
+EFFECT_TABLE = ArrayR(16)
+
+
+class BattleMode(Enum):
+    SET = 0
+    ROTATE = 1
+    OPTIMISE = 2
 
 class PokeType(Enum):
     """
@@ -30,7 +42,18 @@ class TypeEffectiveness:
     Represents the type effectiveness of one Pokemon type against another.
     """
 
-    @classmethod
+    def createTable(self):
+
+        with open("type_effectiveness.csv", 'r') as csvfile:
+
+            i = 0
+            for line in csvfile:
+                EFFECT_TABLE.__setitem__(i, line.strip("\n").split(","))
+                i += 1
+        
+        EFFECT_TABLE.delete_at_index(0)
+        
+
     def get_effectiveness(cls, attack_type: PokeType, defend_type: PokeType) -> float:
         """
         Returns the effectiveness of one Pokemon type against another, as a float.
@@ -42,7 +65,10 @@ class TypeEffectiveness:
         Returns:
             float: The effectiveness of the attack, as a float value between 0 and 4.
         """
-        raise NotImplementedError
+        return float(EFFECT_TABLE[attack_type.value][defend_type.value])
+        
+
+        
 
     def __len__(self) -> int:
         """
@@ -161,7 +187,10 @@ class Pokemon(ABC): # pylint: disable=too-few-public-methods, too-many-instance-
         Returns:
             int: The damage that this Pokemon inflicts on the other Pokemon during an attack.
         """
-        raise NotImplementedError
+        getTyEff = TypeEffectiveness()
+        other_pokemon = Pokemon()
+        effectiveness = getTyEff.get_effectiveness(self.get_poketype(),other_pokemon.get_poketype())
+        return (self.get_battle_power() * effectiveness//1)
 
     def defend(self, damage: int) -> None:
         """
@@ -189,7 +218,20 @@ class Pokemon(ABC): # pylint: disable=too-few-public-methods, too-many-instance-
         Evolves the Pokemon to the next stage in its evolution line, and updates
           its attributes accordingly.
         """
-        raise NotImplementedError
+
+        current_evoName = self.name
+        evolution_line = self.get_evolution()
+        for i in range(len(evolution_line)):
+            if evolution_line[i] == current_evoName:
+                self.name = evolution_line[i+1]
+                break
+
+        self.battle_power *= 1.5
+        self.health *= 1.5
+        self.speed *= 1.5
+        self.defence *= 1.5
+
+
 
     def is_alive(self) -> bool:
         """
@@ -207,3 +249,15 @@ class Pokemon(ABC): # pylint: disable=too-few-public-methods, too-many-instance-
         """
         return f"{self.name} (Level {self.level}) with {self.get_health()} health \
                 and {self.get_experience()} experience"
+    
+    """
+    bruh = TypeEffectiveness()
+    bruh.createTable()
+    for i in EFFECT_TABLE:
+        print(i)
+    print(EFFECT_TABLE.__len__())
+    print(bruh.get_effectiveness(PokeType.WATER,PokeType.FIRE))
+    """
+
+    
+    

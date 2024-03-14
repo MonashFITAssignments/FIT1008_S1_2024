@@ -67,3 +67,19 @@ class ArrayR(Generic[T]):
         
         ret_str = ret_str[:-2] + "]"
         return ret_str
+    
+    """
+    add a delete method so that I can delete elements at a certain index
+    """
+    def delete_at_index(self, index:int):
+        newlength = self.__len__() - 1
+        for i in range(index, newlength):
+            self.array[i] = self.array[i+1]
+        
+        """
+        using slicing to reduce the length of the array
+        """
+        self.array = self.array[:newlength]
+        
+
+            
