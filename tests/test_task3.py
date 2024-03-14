@@ -12,6 +12,7 @@ class TestBattle(unittest.TestCase):
     @number("3.1")
     @visibility(visibility.VISIBILITY_SHOW)
     def test_set_battle(self):
+        random.seed(20)
         t1 = Trainer('Gary')
         t2 = Trainer('Ash')
 
