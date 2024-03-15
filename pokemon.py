@@ -3,7 +3,6 @@ import inspect
 
 class Bulbasaur(Pokemon):
     def __init__(self):
-        super().__init__()
         self.health = 45
         self.level = 1
         self.poketype = PokeType.GRASS
@@ -782,8 +781,8 @@ class Jynx(Pokemon):
         self.speed = 95
 
 class Electabuzz(Pokemon):
-    def __init__(self):
-        super().__init__()
+    def init(self):
+        super().init()
         self.health = 65
         self.level = 1
         self.poketype = PokeType.ELECTRIC
@@ -1005,12 +1004,34 @@ class Dratini(Pokemon):
 def get_all_pokemon_types():
     all_pokemon = ArrayR(77)
     i = 0
-    for name, cls in inspect.getmembers(inspect.getmodule(inspect.currentframe()), inspect.isclass):
+    for name, obj in inspect.getmembers(inspect.getmodule(inspect.currentframe()), inspect.isclass):
         if name not in ['ABC', 'PokeType', 'Pokemon', 'TypeEffectiveness', 'Enum', 'ArrayR']:
-            all_pokemon[i] = cls
+            all_pokemon[i] = obj
             i += 1
     return all_pokemon
 
 
 if __name__ == '__main__':
     pass
+
+
+bruh = TypeEffectiveness()
+bruh.createTable()
+
+for i in EFFECT_TABLE:
+    print(i)
+
+"""
+bulb = Bulbasaur()
+squart = Squirtle()
+print(bulb.get_name())
+bulb._evolve()
+print(bulb.get_name())
+bulb._evolve()
+print(bulb.get_name())
+
+print(bulb.get_poketype())
+
+a = bruh.get_effectiveness(bulb.get_poketype(),squart.get_poketype())
+print(a)
+"""

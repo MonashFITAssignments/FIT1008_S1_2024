@@ -245,4 +245,15 @@ class Pokemon(ABC): # pylint: disable=too-few-public-methods, too-many-instance-
         <name> (Level <level>) with <health> health and <experience> experience
         """
         return f"{self.name} (Level {self.level}) with {self.get_health()} health \
-                and {self.get_experience()} experience"
+    
+    """
+    bruh = TypeEffectiveness()
+    bruh.createTable()
+    for i in EFFECT_TABLE:
+        print(i)
+    print(EFFECT_TABLE.__len__())
+    print(bruh.get_effectiveness(PokeType.WATER,PokeType.FIRE))
+    """
+
+    
+    

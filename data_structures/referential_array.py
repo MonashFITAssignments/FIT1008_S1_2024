@@ -66,7 +66,6 @@ class ArrayR(Generic[T]):
             ret_str += ", "
         
         ret_str = ret_str[:-2] + "]"
-        return ret_str
     
     """
     add a delete method so that I can delete elements at a certain index
@@ -80,3 +79,6 @@ class ArrayR(Generic[T]):
         using slicing to reduce the length of the array
         """
         self.array = self.array[:newlength]
+        
+
+            
