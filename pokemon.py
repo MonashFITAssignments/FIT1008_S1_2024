@@ -1021,7 +1021,7 @@ bruh.createTable()
 for i in EFFECT_TABLE:
     print(i)
 
-"""
+
 bulb = Bulbasaur()
 squart = Squirtle()
 print(bulb.get_name())
@@ -1030,8 +1030,4 @@ print(bulb.get_name())
 bulb._evolve()
 print(bulb.get_name())
 
-print(bulb.get_poketype())
-
-a = bruh.get_effectiveness(bulb.get_poketype(),squart.get_poketype())
-print(a)
-"""
+print(bulb.attack(squart))
