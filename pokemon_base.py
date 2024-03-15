@@ -4,6 +4,7 @@ This module contains PokeType, TypeEffectiveness and an abstract version of the 
 from abc import ABC
 from enum import Enum
 from data_structures.referential_array import ArrayR
+from math import ceil
 
 """
 create an effect table array with a fixed size
