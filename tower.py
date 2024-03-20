@@ -12,10 +12,11 @@ class BattleTower:
     def __init__(self) -> None:
         raise NotImplementedError
 
-    def set_my_trainer(self) -> None:
+    # Hint: use random.randint() for randomisation
+    def set_my_trainer(self, trainer: Trainer) -> None:
         raise NotImplementedError
 
-    def generate_enemy_trainers(self) -> None:
+    def generate_enemy_trainers(self, num_teams: int) -> None:
         raise NotImplementedError
 
     def battles_remaining(self) -> bool:

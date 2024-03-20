@@ -1,22 +1,38 @@
 from pokemon import *
 import random
 from typing import List
+from battle_mode import BattleMode
 
 class PokeTeam:
-    random.seed(20)
     TEAM_LIMIT = 6
     POKE_LIST = get_all_pokemon_types()
+    CRITERION_LIST = ["health", "experience", "defence", "battle_power", "level"]
 
     def __init__(self):
-        raise NotImplementedError
+        self.team = None # change None value if necessary
+        self.team_count = 0
 
     def choose_manually(self):
         raise NotImplementedError
 
     def choose_randomly(self) -> None:
+        all_pokemon = get_all_pokemon_types()
+        self.team_count = 0
+        for i in range(self.TEAM_LIMIT):
+            rand_int = random.randint(0, len(all_pokemon)-1)
+            self.team[i] = all_pokemon[rand_int]()
+            self.team_count += 1
+
+    def regenerate_team(self, battle_mode: BattleMode, criterion: str = None) -> None:
         raise NotImplementedError
 
-    def regenerate_team(self) -> None:
+    def assign_team(self, criterion: str = None) -> None:
+        raise NotImplementedError
+
+    def assemble_team(self, battle_mode: BattleMode) -> None:
+        raise NotImplementedError
+
+    def special(self, battle_mode: BattleMode) -> None:
         raise NotImplementedError
 
     def __getitem__(self, index: int):

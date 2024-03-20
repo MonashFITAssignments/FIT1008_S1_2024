@@ -1002,11 +1002,11 @@ class Dratini(Pokemon):
         self.defence = 10
         self.speed = 86
 
-def get_all_pokemon_types():
+def get_all_pokemon_types() -> ArrayR[Pokemon]:
     all_pokemon = ArrayR(77)
     i = 0
     for name, cls in inspect.getmembers(inspect.getmodule(inspect.currentframe()), inspect.isclass):
-        if name not in ['ABC', 'PokeType', 'Pokemon', 'TypeEffectiveness', 'Enum', 'ArrayR']:
+        if cls != Pokemon and issubclass(cls, Pokemon):
             all_pokemon[i] = cls
             i += 1
     return all_pokemon

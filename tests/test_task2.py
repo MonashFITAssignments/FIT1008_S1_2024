@@ -47,7 +47,6 @@ class TestTrainer(unittest.TestCase):
     @visibility(visibility.VISIBILITY_SHOW)
     def test_get_name(self):
         trainer = Trainer('Ash')
-
         self.assertEqual(trainer.get_name(), 'Ash', "Trainer get_name not set up correctly")
 
     @number("2.6")

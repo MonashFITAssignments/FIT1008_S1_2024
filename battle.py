@@ -6,14 +6,19 @@ from battle_mode import BattleMode
 class Battle:
 
     def __init__(self, trainer_1: Trainer, trainer_2: Trainer, battle_mode: BattleMode, criterion = "health") -> None:
-        raise NotImplementedError
+        self.trainer_1 = trainer_1
+        self.trainer_2 = trainer_2
+        self.battle_mode = battle_mode
+        self.criterion = criterion
 
     def commence_battle(self) -> Trainer | None:
         raise NotImplementedError
 
-    def _create_teams(self) -> Tuple[PokeTeam, PokeTeam]:
+    def _create_teams(self) -> None:
         raise NotImplementedError
 
+    # Note: These are here for your convenience
+    # If you prefer you can ignore them
     def set_battle(self) -> PokeTeam | None:
         raise NotImplementedError
 
@@ -26,11 +31,9 @@ class Battle:
 
 if __name__ == '__main__':
     t1 = Trainer('Ash')
-    t1.pick_team("random")
-
     t2 = Trainer('Gary')
-    t2.pick_team('random')
     b = Battle(t1, t2, BattleMode.ROTATE)
+    b._create_teams()
     winner = b.commence_battle()
 
     if winner is None:
