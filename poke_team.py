@@ -6,7 +6,7 @@ from battle_mode import BattleMode
 class PokeTeam:
     TEAM_LIMIT = 6
     POKE_LIST = get_all_pokemon_types()
-    CRITERION_LIST = ["health", "experience", "defence", "battle_power", "level"]
+    CRITERION_LIST = ["health", "defence", "battle_power", "speed", "level"]
 
     def __init__(self):
         self.team = None # change None value if necessary
